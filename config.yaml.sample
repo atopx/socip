@@ -1,0 +1,26 @@
+# 通用配置
+password:  # 下载的zip解压密码
+folder:   # 下载数据存放目录
+ip_version: 4 # 构建的离线库版本
+record_size: 24 # 数据库块大小[24, 28, 32]
+
+# 基础数据库
+basic:
+  id:  # 某站下载数据源文件的 downloadId
+  input: 'basic.txt'  # 输入文件名(对应下载并解压后的重命名)
+  output: 'soc-geoip-v2.0.3.socdb' # 输出文件名
+  database_type: 'SOC-GeoIP' # 数据库类型
+  description:  # 描述信息
+    - en: 'SOC ipv4 geographic information offline database'
+    - cn: '赛欧思IP地理信息离线数据库'
+
+# 场景数据库
+scene:
+  id:  # 某站下载数据源文件的 downloadId
+  input: 'scene.txt' # 输入文件名(对应下载并解压后的重命名)
+  output: 'soc-scene-v2.0.3.socdb' # 输出文件名
+  database_type: 'SOC-Scene' # 数据库类型
+  description:  # 描述信息
+    - en: 'SOC ipv4 usage scenario offline database'
+    - cn: '赛欧思IP使用场景离线数据库'
+
