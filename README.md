@@ -8,7 +8,7 @@
 ```bash
 cd $GOPATH/src/
 mkdir -p github.com/yanmengfei
-git clone gitlab@git.socmap.org:yanmengfei/socip.git github.com/yanmengfei/
+git clone https://github.com/yanmengfei/socip.git github.com/yanmengfei/
 cd github.com/yanmengfei/socip
 ```
 
